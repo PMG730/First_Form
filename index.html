@@ -1,0 +1,102 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <h2>Form</h2>
+        <div class="container">
+            <form>
+                <fieldset>
+                        <legend>
+                            Contact Information
+                        </legend>
+                    <label for="fname">
+                        Name:
+                    <input autofocus type="text" name="fname" id="fname" required placeholder="First Name"/>
+                    </label>
+                    <label for="lname">
+                        Last Name:
+                        <input type="text" name="lname" id="lname" required placeholder="Last Name"/>
+                    </label>
+                    <label for="email">
+                        Email:
+                    <input type="email" name="fname" id="email" required placeholder="Email"/>
+                    </label>
+            </fieldset>
+            <fieldset class="field2">
+                <legend>
+                    Reservation Request
+                </legend>
+                <label for="teachers">
+                    Choose a teacher:
+
+                <select name="teachers" id="teachers">
+                <option value="smith">Mr. Smith</option>
+                <option value="johnson">Ms. Johnson</option>
+                <option value="brown">Mr. Brown</option>
+                <option value="wilson">Ms. Wilson</option>
+                <option value="davis">Mr. Davis</option>
+                </select>
+            </label>
+                <label for="months">
+                    Choose a month:
+
+<select name="months" id="months">
+  <option value="january">January</option>
+  <option value="february">February</option>
+  <option value="march">March</option>
+  <option value="april">April</option>
+  <option value="may">May</option>
+  <option value="june">June</option>
+  <option value="july">July</option>
+  <option value="august">August</option>
+  <option value="september">September</option>
+  <option value="october">October</option>
+  <option value="november">November</option>
+  <option value="december">December</option>
+</select>
+</label>
+<div class="number-box">
+    <input class="numbers" type="number" value="1" min="1" max="31">
+    <button class="up" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">▲</button>
+    <button class="down" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">▼</button>
+  </div>
+  <label class="radio">
+    <input type="radio" class="radio2" name="time" value="AM"> AM
+  </label>
+  <label class="radio">
+    <input type="radio" class="radio2" name="time" value="PM"> PM
+  </label>
+  </fieldset>
+  <fieldset class="">
+    <legend>
+        Classes you want to take next semester
+    </legend>
+    <label>
+        <input type="checkbox" name="classes" value="C#"> C#
+    </label>
+    <label>
+        <input type="checkbox" name="classes" value="Python"> Python
+    </label>
+    <label>
+        <input type="checkbox" name="classes" value="English"> English
+    </label>
+    <label>
+        <input type="checkbox" name="classes" value="Math"> Math
+    </label>
+    <label>
+        <input type="checkbox" name="classes" value="Baking"> Baking
+    </label>
+</fieldset>
+
+                <input class="submit" type="submit" value="Submit" />
+            </form>
+
+
+
+
+        </div>
+    </body>
+</html>

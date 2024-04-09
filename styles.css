@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.container{
+    margin:auto;
+    width:80%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    color: black;
+}
+h2 {text-align: center}
+
+label{display: block; padding-bottom: 5px; position: relative;}
+input{position:absolute; left:15%; width: 75%;}
+.submit {width:initial; position: initial;}
+.numbers{width:initial; position: initial;}
+.field2{display:flex;
+flex-wrap: wrap;}
+.radio{position:relative; padding-left:15px;
+color: black;}
+.radio2{left: 28px;
+color: black;}
